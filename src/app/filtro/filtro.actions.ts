@@ -1,6 +1,11 @@
 import {createAction, props} from "@ngrx/store";
 
-export type filtrosValidos = 'todos' | 'completados' | 'pendientes';
+// export type filtrosValidos = 'todos' | 'completados' | 'pendientes';
+export enum filtrosValidos {
+  todos = 'todos',
+  completados = 'completados',
+  pendientes = 'pendientes'
+}
 
 export const setFiltro = createAction(
   '[Filtro] Set Filtro',
